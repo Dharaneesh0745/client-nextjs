@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
 
     const fetchData = async () => {
-      await axios.get("http://localhost:8000/users", {withCredentials: true}).then((res) => {
+      await axios.get("https://codesynthxyz-server-test.onrender.com/users", {withCredentials: true}).then((res) => {
         setUserData(res.data.users);
       }).catch((error) => {
         console.log(error)
